@@ -1,0 +1,31 @@
+# Node modules
+node_modules/
+
+# Output build
+dist/
+build/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Environment variables
+.env
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# VSCode settings
+.vscode/
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Dependency lock files (pilih salah satu jika menggunakan npm/yarn/pnpm)
+package-lock.json
+# yarn.lock
+# pnpm-lock.yaml

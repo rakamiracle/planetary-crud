@@ -4,4 +4,5 @@ export interface Moon {
   name: string;
   diameter: number;
   discovered_year?: number;
+  created_at?: Date;
 }
