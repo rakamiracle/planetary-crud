@@ -52,11 +52,7 @@ export class PlanetController {
 
       const planetWithMoons: PlanetWithMoons = {
         ...planetRows[0] as Planet,
-        moons: moonRows.map(row => ({
-          planet_id: row.planet_id,
-          name: row.name,
-          diameter: row.diameter
-        }))
+        moons: moonRows as import('../models/Planet').Moon[]
       };
 
       res.json({
