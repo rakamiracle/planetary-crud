@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "lib": ["deno.window"],
+    "strict": true
+  },
+  "tasks": {
+    "start": "deno run --allow-net --allow-read --allow-env server.ts",
+    "dev": "deno run --allow-net --allow-read --allow-env --watch server.ts",
+    "cache": "deno cache deps.ts"
+  },
+  "imports": {
+    "oak/": "https://deno.land/x/oak@v15.0.0/",
+    "dotenv/": "https://deno.land/x/dotenv@v3.4.3/",
+    "mysql/": "https://deno.land/x/mysql@v2.14.0/"
+  }
+}
